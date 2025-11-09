@@ -13,7 +13,7 @@ body {
     padding: 40px;
     border-radius: 15px;
     color: white;
-    overflow: visible; /* permitir elementos que "saiam" do box (como legend) */
+    overflow: visible; 
 }
 
 .box {
@@ -23,7 +23,7 @@ body {
 
 fieldset {
     border: 3px solid dodgerblue;
-    padding-top: 1.6rem 1rem 1rem; /* espaço extra no topo para a legenda */
+    padding-top: 1.6rem 1rem 1rem; 
     margin-top: 0.6rem;
 }
 
@@ -35,8 +35,8 @@ legend {
     color: white;
     border-radius: 8px;
     position: relative;
-    top: -0.6rem; /* puxa a legenda para cima, sobre a borda */
-    z-index: 2;   /* garante que fique acima da borda do fieldset */
+    top: -0.6rem; 
+    z-index: 2;  
     border: 1px solid dodgerblue;
 }
 
