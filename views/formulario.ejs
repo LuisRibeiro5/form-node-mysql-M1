@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="/merged.css">
 </head>
 <body>
+    <a href="/auth/home">back-home</a>
     <div class="box">
-        <form method="POST" action="/formulario">
+        <form method="POST" action="/auth/formulario">
             <fieldset>
                 <legend>
                     <b>Formulario de clientes</b>
@@ -17,6 +18,10 @@
                 <div class="inputBox">
                     <input type="text" name="nome" id="nome" class="inputUser" required>
                     <label for="nome" class="labelInput">Nome completo</label>
+                </div><br><br>
+                <div class="inputBox">
+                    <input type="password" name="senha" id="senha" class="inputUser" required>
+                    <label for="senha" class="labelInput">Senha</label>
                 </div><br><br>
                 <div class="inputBox">
                     <input type="email" name="email" id="email" class="inputUser" placeholder="" required>

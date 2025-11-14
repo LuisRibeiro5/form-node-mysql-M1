@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-image: linear-gradient(to right, lightblue, blue);
+        }
+        .box {
+            margin-top: 30px;
+            background-color: rgba(8, 55, 101,0.8);
+            position: absolute;
+            top: 50%;
+            left: 50%;      
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .box a {
+            display: inline-block;
+            margin: 0 15px;
+            padding: 10px 20px;
+            background-color: #00142a;
+            color: white;
+            text-decoration: none;
+            border: 3px solid dodgerblue;
+            border-radius: 5px;
+            
+        }
+        .box a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema M1</h1>
+    <h2>Prog. web</h2>
+    <div class="box">
+        <a href="/auth/login">Login</a>
+        <a href="/auth/formulario">Cadastre-se</a>
+    </div>
+    <span style="color: green;"><%=mensagem%></span>
+    <span style="color: green;"><%=user[0]['nome']%></span>
+</body>
+</html>

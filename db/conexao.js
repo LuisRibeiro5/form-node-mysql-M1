@@ -1,5 +1,5 @@
 // db/conexao.js
-const mysql = require('mysql2');
+const mysql = require('mysql2/promise');
 
 
 const pool = mysql.createPool({
@@ -10,4 +10,4 @@ const pool = mysql.createPool({
   database: 'formulario',
 });
 
-module.exports = pool.promise(); 
+module.exports = pool; 
